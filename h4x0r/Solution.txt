@@ -1,0 +1,11 @@
+Tu sais que le fichier chiffré est un png, tu peux simplement xor les 8 premiers bytes 
+du fichier avec les 8 bytes de la signature d'un png (89 50 4E 47 0D 0A 1A 0A) Tu auras les 8 premiers 
+bytes de la clé, et tu n'auras plus qu'à trouver le dernier byte (9 possibilités)
+
+http://xor.pw/
+
+signature png : 89504e470d0a1a0a
+singature encodée : d7679b2bca317ab9*
+clé XOR : 5e37d56cc73b60b3
+
+https://hexed.it/
